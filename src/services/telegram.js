@@ -36,6 +36,7 @@ class TelegramService {
         try {
             const trendEmoji = alert.direction === '上涨' ? '📈' : '📉';
             const message = `
+            
 💱 交易对: \`${alert.symbol}\`
 🏦 交易所: \`Binance\`
 
