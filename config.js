@@ -16,7 +16,7 @@ module.exports = {
     priceMonitor: {
         threshold: 2,           // 价格变动阈值（百分比），默认 1%
         timeWindow: 5000,       // 时间窗口（毫秒），默认 5秒
-        alertCooldown: 10000    // 告警冷却时间（毫秒），默认 60秒
+        alertCooldown: 60000    // 告警冷却时间（毫秒），默认 60秒
     },
 
     // 其他配置
