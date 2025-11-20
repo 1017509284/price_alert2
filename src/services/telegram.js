@@ -34,13 +34,11 @@ class TelegramService {
         }
 
         try {
-            const emoji = alert.direction === '上涨' ? '🚀' : '📉';
             const trendEmoji = alert.direction === '上涨' ? '📈' : '📉';
             const message = `
-${emoji} *价格告警* ${emoji}
-
-🏦 交易所: \`Binance\`
 💱 交易对: \`${alert.symbol}\`
+🏦 交易所: \`Binance\`
+
 ${trendEmoji} 变动: *${alert.changePercent}%* (${alert.direction})
 
 💰 当前价格: \`${alert.currentPrice}\`
